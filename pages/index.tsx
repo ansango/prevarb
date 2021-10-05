@@ -26,12 +26,12 @@ const Home: NextPage = () => {
           })}
         </ul>
 
-        <p className="text-xl text-blue-500 hover:underline pt-24 text-center">
+        <p className="text-xl text-blue-500 pt-24 text-center">
           <a
             href="https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fnext-starter-v2.vercel.app%2F&tab=mobile"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-center"
+            className="text-center hover:underline"
           >
             {t("performance")}
           </a>
