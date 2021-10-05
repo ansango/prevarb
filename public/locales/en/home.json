@@ -1,0 +1,16 @@
+{
+  "title": "Hello, welcome to Next Starter",
+  "tools": {
+    "rss": "Feed ready on deploy",
+    "next": "The React framework",
+    "husky": "Modern native Git hooks",
+    "eslint": "Code quality",
+    "sitemap": "Sitemap ready on deploy",
+    "prettier": "Code formatter",
+    "typescript": "JavaScript superset",
+    "lint-staged": "Linters in git staged files",
+    "next-localization": "Lightweight Internationalization"
+  },
+  "description": "Starter configuration",
+  "performance": "100% in PageSpeed Insights"
+}
