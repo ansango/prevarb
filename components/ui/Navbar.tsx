@@ -1,12 +1,11 @@
 import { useRouter } from "next/router";
-import styles from "styles/components/ui/Navbar.module.css";
 import Link from "next/link";
-import { namespace } from "public/locales/namespace";
+import { namespace } from "locales/namespace";
 
 const Navbar = () => {
   const { asPath, locale, locales, defaultLocale } = useRouter();
 
-  const langs = locales
+  const langsRoutes = locales
     ?.map((loc: string) => {
       const { flag }: any = namespace[loc];
 
@@ -19,10 +18,15 @@ const Navbar = () => {
     .filter(({ loc }) => loc !== locale);
 
   return (
-    <header className={styles.navbar}>
-      <div></div>
+    <header className="flex items-center justify-between py-10">
+      <p className="text-2xl font-semibold">
+        <Link href="/" passHref>
+          next-starter v2
+        </Link>
+      </p>
+
       <ul>
-        {langs?.map(({ route, loc, flag }) => (
+        {langsRoutes?.map(({ route, loc, flag }) => (
           <Link key={route} href={route} locale={loc}>
             {flag}
           </Link>

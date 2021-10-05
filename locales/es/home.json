@@ -1,5 +1,6 @@
 {
   "title": "Hola, bienvenido a Next Starter",
+  "description": "Configuración del starter",
   "tools": {
     "rss": "Feed listo en cada despliegue",
     "next": "El framework de React",
@@ -11,6 +12,5 @@
     "lint-staged": "Linters en git staged",
     "next-localization": "Internacionalización ligera"
   },
-  "description": "Configuración del starter",
   "performance": "100% en PageSpeed Insights"
 }
