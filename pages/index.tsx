@@ -2,7 +2,8 @@ import type { GetStaticProps, NextPage } from "next";
 import { useI18n } from "next-localization";
 import PageSeo from "components/utils/PageSeo";
 import DefaultLayout from "layouts/DefaultLayout";
-import Calendar from "components/ui/Calendar";
+import Calendar from "components/ui/calendar/Calendar";
+
 
 const Home: NextPage = () => {
   const { t } = useI18n();

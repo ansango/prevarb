@@ -1,5 +1,5 @@
 import { FC, useEffect, useRef, useState } from "react";
-import CalendarRow from "components/ui/CalendarRow";
+import CalendarRow from "components/ui/calendar/CalendarRow";
 
 export interface CalendarProps { }
 
@@ -21,6 +21,7 @@ const Calendar: FC<CalendarProps> = () => {
     }, [activeYear]);
 
     useEffect(() => {
+        console.log(new Date(new Date().setMonth(activeMonth)).toDateString().split(" ")[1]);
         setActiveMonthString(
             new Date(new Date().setMonth(activeMonth)).toDateString().split(" ")[1]
         );

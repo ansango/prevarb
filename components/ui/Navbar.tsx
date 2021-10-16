@@ -4,7 +4,7 @@ const Navbar = () => {
   const { t } = useI18n();
   return (
     <nav className="py-3 bg-green-600">
-      <ul className="flex items-center justify-center">
+      <ul className="hidden md:flex items-center justify-center">
         {Object.entries(t('common.nav')).map(([key, value]) => {
           return (
             <li className="mx-2 text-white hover:underline" key={key}>
