@@ -4,11 +4,7 @@ import { useI18n } from 'next-localization';
 
 const Header = () => {
     const { t } = useI18n();
-    const tt = t('title')
-    console.log(tt)
-
     const { asPath, locale, locales, defaultLocale } = useRouter();
-
     const langsRoutes = locales
         ?.map((loc: string) => {
             console.log();
@@ -25,20 +21,24 @@ const Header = () => {
 
     return (
         <header>
-            <ul className="flex justify-end bg-gray-200 py-2">
-                <li className="mx-4">Mi cuenta</li>
-                <li className="mx-4">Cerrar Sesion</li>
-                {langsRoutes?.map(({ route, loc }) => (
-                    <Link key={route} href={route} locale={loc}>
-                        <span className="mx-2">
-                            {loc}
-                        </span>
-                    </Link>
-                ))}
-            </ul>
-            <div className="py-4 text-center">
-                <p className="text-4xl">Árbore</p>
-                <span className="uppercase" style={{ fontSize: "0.75rem" }}>Consumo Consciente</span>
+            <div className="flex justify-between bg-gray-200 py-3">
+                <ul>
+                    {langsRoutes?.map(({ route, loc }) => (
+                        <Link key={route} href={route} locale={loc}>
+                            <span className="mx-2 cursor-pointer uppercase">
+                                {loc}
+                            </span>
+                        </Link>
+                    ))}
+                </ul>
+                <ul className="flex">
+                    <li className="mx-4">{t('common.session.account')}</li>
+                    <li className="mx-4 hidden">{t('common.session.login')}</li>
+                    <li className="mx-4">{t('common.session.logout')}</li>
+                </ul>
+
+            </div>
+            <div className="py-14 text-center bg-red-100">
             </div>
         </header>
     )
