@@ -1,0 +1,41 @@
+{
+  "commmon": {
+    "nav": {},
+    "footer": {}
+  },
+
+  "home": {
+    "title": "",
+    "subtitle": "",
+    "seo": {
+      "title": "",
+      "description": ""
+    }
+  },
+  "blog": {
+    "title": "",
+    "subtitle": "",
+    "seo": {
+      "title": "",
+      "description": ""
+    }
+  },
+
+  "404": {
+    "title": "",
+    "subtitle": "",
+    "seo": {
+      "title": "",
+      "description": ""
+    }
+  },
+  "500": {
+    "title": "",
+    "subtitle": "",
+    "button": "",
+    "seo": {
+      "title": "",
+      "description": ""
+    }
+  }
+}
