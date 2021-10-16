@@ -16,19 +16,26 @@
     },
     "footer": {
       "menu": {
-        "company": "Company",
-        "projects": "Projects",
-        "blog": "Blog",
-        "members": "Members",
-        "contact": "Contact"
+        "title": "Menu",
+        "links": {
+          "company": "Company",
+          "projects": "Projects",
+          "blog": "Blog",
+          "members": "Members",
+          "contact": "Contact"
+        }
       },
       "usefulLinks": {
-        "cookies": "Cookies policy",
-        "legal": "Legal notice",
-        "data": "Privacy policy"
+        "title": "Useful Links",
+        "links": {
+          "cookies": "Cookies policy",
+          "legal": "Legal notice",
+          "data": "Privacy policy"
+        }
       },
       "contact": {
-        "sample": "Sample"
+        "title": "Contact",
+        "links": { "sample": "Sample" }
       }
     }
   },

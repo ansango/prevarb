@@ -16,19 +16,28 @@
     },
     "footer": {
       "menu": {
-        "company": "Empresa",
-        "projects": "Proxectos",
-        "blog": "Blog",
-        "members": "Socias",
-        "contact": "Contacto"
+        "title": "Menú",
+        "links": {
+          "company": "Empresa",
+          "projects": "Proxectos",
+          "blog": "Blog",
+          "members": "Socias",
+          "contact": "Contacto"
+        }
       },
       "usefulLinks": {
-        "cookies": "Política de cookies",
-        "legal": "Aviso legal",
-        "data": "Privacidade de datos"
+        "title": "Ligazóns útiles",
+        "links": {
+          "cookies": "Política de cookies",
+          "legal": "Aviso legal",
+          "data": "Privacidade de datos"
+        }
       },
       "contact": {
-        "sample": "Exemplo"
+        "title": "Contacto",
+        "link": {
+          "sample": "Exemplo"
+        }
       }
     }
   },

@@ -2,6 +2,7 @@ import type { GetStaticProps, NextPage } from "next";
 import { useI18n } from "next-localization";
 import PageSeo from "components/utils/PageSeo";
 import DefaultLayout from "layouts/DefaultLayout";
+import Calendar from "components/ui/Calendar";
 
 const Home: NextPage = () => {
   const { t } = useI18n();
@@ -11,7 +12,7 @@ const Home: NextPage = () => {
       <main>
         <h1 className="text-3xl font-bold text-center pb-5">{t("title")}</h1>
         <h2 className="text-2xl italic text-center pb-5">{t("description")}</h2>
-
+        <Calendar />
       </main>
     </DefaultLayout>
   );
