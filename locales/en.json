@@ -33,85 +33,67 @@
     }
   },
   "home": {
-    "title": "",
-    "subtitle": "",
+    "title": "Home",
     "seo": {
-      "title": "",
-      "description": ""
+      "title": "Home",
+      "description": "A Home Page"
     },
     "components": {}
   },
   "about": {
-    "title": "",
-    "subtitle": "",
+    "title": "title",
     "seo": {
-      "title": "",
-      "description": ""
+      "title": "About",
+      "description": "About Page"
     }
   },
   "products": {
-    "title": "",
-    "subtitle": "",
+    "title": "Products",
     "seo": {
-      "title": "",
-      "description": ""
+      "title": "Products",
+      "description": "Product Page"
     }
   },
   "store": {
-    "title": "",
-    "subtitle": "",
+    "title": "Store",
     "seo": {
-      "title": "",
-      "description": ""
+      "title": "Store",
+      "description": "Store Page"
     }
   },
   "activities": {
-    "title": "",
-    "subtitle": "",
+    "title": "Activities",
     "seo": {
-      "title": "",
-      "description": ""
+      "title": "Activities",
+      "description": "Activities Page"
     }
   },
   "blog": {
-    "title": "",
-    "subtitle": "",
+    "title": "Blog",
     "seo": {
-      "title": "",
-      "description": ""
+      "title": "Blog",
+      "description": "Blog Page"
     }
   },
   "members": {
-    "title": "",
-    "subtitle": "",
+    "title": "Members",
     "seo": {
-      "title": "",
-      "description": ""
+      "title": "Members",
+      "description": "Members Page"
     }
   },
   "contact": {
-    "title": "",
-    "subtitle": "",
+    "title": "Contact",
     "seo": {
-      "title": "",
-      "description": ""
+      "title": "Contact",
+      "description": "Contact Page"
     }
   },
   "404": {
-    "title": "",
-    "subtitle": "",
+    "title": "404",
     "seo": {
-      "title": "",
-      "description": ""
-    }
-  },
-  "500": {
-    "title": "",
-    "subtitle": "",
-    "button": "",
-    "seo": {
-      "title": "",
-      "description": ""
+      "title": "404",
+      "description": "404 Page"
     }
   }
 }

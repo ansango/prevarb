@@ -33,85 +33,67 @@
     }
   },
   "home": {
-    "title": "",
-    "subtitle": "",
+    "title": "Inicio",
     "seo": {
-      "title": "",
-      "description": ""
+      "title": "Inicio",
+      "description": "Páxina de inicio"
     },
     "components": {}
   },
   "about": {
-    "title": "",
-    "subtitle": "",
+    "title": "Nós",
     "seo": {
-      "title": "",
-      "description": ""
+      "title": "Nós",
+      "description": "Páxina sobre Árbore"
     }
   },
   "products": {
-    "title": "",
-    "subtitle": "",
+    "title": "Productos",
     "seo": {
-      "title": "",
-      "description": ""
+      "title": "Productos",
+      "description": "Os produtos que temos"
     }
   },
   "store": {
-    "title": "",
-    "subtitle": "",
+    "title": "Tienda",
     "seo": {
-      "title": "",
-      "description": ""
+      "title": "Tienda",
+      "description": "Que temos en tenda?"
     }
   },
   "activities": {
-    "title": "",
-    "subtitle": "",
+    "title": "Actividades y formación",
     "seo": {
-      "title": "",
-      "description": ""
+      "title": "Actividades",
+      "description": "Actividades e formación"
     }
   },
   "blog": {
-    "title": "",
-    "subtitle": "",
+    "title": "Blog",
     "seo": {
-      "title": "",
-      "description": ""
+      "title": "Blog",
+      "description": "As nosas noticias"
     }
   },
   "members": {
-    "title": "",
-    "subtitle": "",
+    "title": "Socias",
     "seo": {
-      "title": "",
-      "description": ""
+      "title": "Socias",
+      "description": "As  miembras"
     }
   },
   "contact": {
-    "title": "",
-    "subtitle": "",
+    "title": "Contacto",
     "seo": {
-      "title": "",
-      "description": ""
+      "title": "Contacto",
+      "description": "A nosa páxina de contacto"
     }
   },
   "404": {
-    "title": "",
-    "subtitle": "",
+    "title": "404 - Non se atopou!",
     "seo": {
-      "title": "",
-      "description": ""
-    }
-  },
-  "500": {
-    "title": "",
-    "subtitle": "",
-    "button": "",
-    "seo": {
-      "title": "",
-      "description": ""
+      "title": "404",
+      "description": "404 Not Found"
     }
   }
 }
