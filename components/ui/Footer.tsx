@@ -1,28 +1,39 @@
 import Link from 'next/link';
 import { siteMetadata } from "lib/siteMetadata";
 import { useI18n } from 'next-localization';
+import { FBIcon, IGIcon, TWIcon, YTIcon } from './icons';
+
+
+
+
 const Footer = () => {
   const { t } = useI18n();
   const currentYear = new Date().getFullYear();
   return (
-    <footer className="">
-      <div>
-        <ul>
-          <li className="w-8 h-8 text-green-600">
-
+    <footer >
+      <div className="pt-10 pb-5">
+        <ul className="flex justify-center pb-3">
+          <li className="w-8 h-8 text-green-600 text-xl">
+            <FBIcon />
           </li>
-          <li>
-
+          <li className="w-8 h-8 text-green-600 text-xl">
+            <TWIcon />
+          </li>
+          <li className="w-8 h-8 text-green-600 text-xl">
+            <IGIcon />
+          </li>
+          <li className="w-8 h-8 text-green-600 text-xl">
+            <YTIcon />
           </li>
         </ul>
-      </div>
-      <div className="flex justify-center py-5 text-center">
-        <ul className="grid grid-cols-2 md:grid-cols-4">
-          <li>Nosotros</li>
-          <li>Dónde estamos</li>
-          <li>Condiciones Generales</li>
-          <li>Ley de protección de datos</li>
-        </ul>
+        <div className="flex justify-center text-center">
+          <ul className="grid grid-cols-2 md:grid-cols-4">
+            <li>Nosotros</li>
+            <li>Dónde estamos</li>
+            <li>Condiciones Generales</li>
+            <li>Ley de protección de datos</li>
+          </ul>
+        </div>
       </div>
       <div className="bg-green-600 text-white p-10">
         <div className="flex justify-center pb-10">
