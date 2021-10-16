@@ -1,6 +1,6 @@
 import type { GetStaticProps, NextPage } from "next";
 import { useI18n } from "next-localization";
-import PageSeo from "components/seo/PageSeo";
+import PageSeo from "components/utils/PageSeo";
 import DefaultLayout from "layouts/DefaultLayout";
 
 const NotFound: NextPage = () => {
@@ -9,7 +9,7 @@ const NotFound: NextPage = () => {
         <DefaultLayout>
             <PageSeo title={t("404.seo.title")} description={t("404.seo.description")} />
             <main>
-                ERROR 404
+                {t("404.title")}
             </main>
         </DefaultLayout>
     );

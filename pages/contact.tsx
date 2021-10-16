@@ -1,6 +1,6 @@
 import type { GetStaticProps, NextPage } from "next";
 import { useI18n } from "next-localization";
-import PageSeo from "components/seo/PageSeo";
+import PageSeo from "components/utils/PageSeo";
 import DefaultLayout from "layouts/DefaultLayout";
 
 const Contact: NextPage = () => {

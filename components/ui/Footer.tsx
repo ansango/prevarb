@@ -1,4 +1,4 @@
-import { siteMetadata } from "data/siteMetadata";
+import { siteMetadata } from "lib/siteMetadata";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();

@@ -1,16 +1,13 @@
 import { useRouter } from "next/router";
 import Link from "next/link";
 import { useI18n } from 'next-localization';
+import { Navbar } from ".";
 
 const Header = () => {
     const { t } = useI18n();
     const { asPath, locale, locales, defaultLocale } = useRouter();
     const langsRoutes = locales
         ?.map((loc: string) => {
-            console.log();
-
-
-
             return {
                 route: defaultLocale !== loc ? `/${loc}${asPath}` : asPath,
                 loc,
@@ -24,7 +21,7 @@ const Header = () => {
             <div className="flex justify-between bg-gray-200 py-3">
                 <ul>
                     {langsRoutes?.map(({ route, loc }) => (
-                        <Link key={route} href={route} locale={loc}>
+                        <Link key={route} href={route} locale={loc} passHref>
                             <span className="mx-2 cursor-pointer uppercase">
                                 {loc}
                             </span>
@@ -40,6 +37,7 @@ const Header = () => {
             </div>
             <div className="py-14 text-center bg-red-100">
             </div>
+            <Navbar />
         </header>
     )
 }
