@@ -1,8 +1,36 @@
 {
   "commmon": {
-    "session": {},
-    "nav": {},
-    "footer": {}
+    "session": {
+      "account": "A miña conta",
+      "login": "Iniciar sesión",
+      "logout": "Pechar sesión"
+    },
+    "nav": {
+      "about": "Nós",
+      "products": "Os nosos produtos",
+      "store": "Tenda",
+      "activities": "Actividades e formación",
+      "blog": "Blogue",
+      "members": "Socias",
+      "contact": "Contacto"
+    },
+    "footer": {
+      "menu": {
+        "company": "Empresa",
+        "projects": "Proxectos",
+        "blog": "Blog",
+        "members": "Socias",
+        "contact": "Contacto"
+      },
+      "usefulLinks": {
+        "cookies": "Política de cookies",
+        "legal": "Aviso legal",
+        "data": "Privacidade de datos"
+      },
+      "contact": {
+        "sample": "Exemplo"
+      }
+    }
   },
   "home": {
     "title": "",

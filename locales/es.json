@@ -1,8 +1,36 @@
 {
   "commmon": {
-    "session": {},
-    "nav": {},
-    "footer": {}
+    "session": {
+      "account": "Mi cuenta",
+      "login": "Iniciar sesión",
+      "logout": "Cerrar sesión"
+    },
+    "nav": {
+      "about": "Nosotros",
+      "products": "Nuestros productos",
+      "store": "Tienda",
+      "activities": "Actividades y formación",
+      "blog": "Blog",
+      "members": "Socias",
+      "contact": "Contacto"
+    },
+    "footer": {
+      "menu": {
+        "company": "Empresa",
+        "projects": "Proyectos",
+        "blog": "Blog",
+        "members": "Socias",
+        "contact": "Contacto"
+      },
+      "usefulLinks": {
+        "cookies": "Política de cookies",
+        "legal": "Aviso legal",
+        "data": "Privacidad de datos"
+      },
+      "contact": {
+        "sample": "Ejemplo"
+      }
+    }
   },
   "home": {
     "title": "",
