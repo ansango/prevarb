@@ -1,10 +1,43 @@
 {
   "commmon": {
+    "session": {},
     "nav": {},
     "footer": {}
   },
-
   "home": {
+    "title": "",
+    "subtitle": "",
+    "seo": {
+      "title": "",
+      "description": ""
+    },
+    "components": {}
+  },
+  "about": {
+    "title": "",
+    "subtitle": "",
+    "seo": {
+      "title": "",
+      "description": ""
+    }
+  },
+  "products": {
+    "title": "",
+    "subtitle": "",
+    "seo": {
+      "title": "",
+      "description": ""
+    }
+  },
+  "store": {
+    "title": "",
+    "subtitle": "",
+    "seo": {
+      "title": "",
+      "description": ""
+    }
+  },
+  "activities": {
     "title": "",
     "subtitle": "",
     "seo": {
@@ -20,7 +53,22 @@
       "description": ""
     }
   },
-
+  "members": {
+    "title": "",
+    "subtitle": "",
+    "seo": {
+      "title": "",
+      "description": ""
+    }
+  },
+  "contact": {
+    "title": "",
+    "subtitle": "",
+    "seo": {
+      "title": "",
+      "description": ""
+    }
+  },
   "404": {
     "title": "",
     "subtitle": "",
