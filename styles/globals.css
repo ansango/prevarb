@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.react-calendar {
+  @apply max-w-sm text-green-600 mx-auto;
+}
+
+.react-calendar__month-view__weekdays__weekday {
+  @apply capitalize text-center p-4;
+}
+
+.react-calendar__month-view__weekdays__weekday > abbr {
+  @apply no-underline;
+}
+
+.react-calendar__tile.react-calendar__month-view__days__day {
+  @apply p-4;
+}

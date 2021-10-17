@@ -3,7 +3,7 @@
 import { useRouter } from 'next/router';
 import { useState } from 'react';
 import CalendarLib from 'react-calendar';
-import 'react-calendar/dist/Calendar.css';
+
 const Calendar = () => {
     const { locale } = useRouter();
     const [value, onChange] = useState(new Date());
