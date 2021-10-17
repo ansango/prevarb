@@ -18,8 +18,8 @@ const ContactForm = () => {
                     border-gray-300
                     shadow-sm
                     focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50
-                  ">
-                            <option disabled selected>Tipo de consulta</option>
+                  " defaultValue="Tipo de consulta">
+                            <option disabled>Tipo de consulta</option>
                             <option>Información</option>
                             <option>Socios</option>
                             <option>Otra</option>
@@ -34,8 +34,8 @@ const ContactForm = () => {
                     border-gray-300
                     shadow-sm
                     focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50
-                  ">
-                            <option selected disabled>Eres cliente</option>
+                  " defaultValue="Eres cliente">
+                            <option disabled>Eres cliente</option>
                             <option>Si</option>
                             <option>No</option>
                         </select>
