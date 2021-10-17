@@ -6,7 +6,7 @@ const ContactForm = () => {
         console.log("Submitted");
     };
     return (
-        <form className="pt-12 pb-24 px-5" onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit}>
             <div className="">
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                     <label className="block">
