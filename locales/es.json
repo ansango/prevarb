@@ -1,0 +1,108 @@
+{
+  "common": {
+    "session": {
+      "account": "Mi cuenta",
+      "login": "Iniciar sesión",
+      "logout": "Cerrar sesión"
+    },
+    "nav": {
+      "about": "Nosotros",
+      "products": "Nuestros productos",
+      "store": "Tienda",
+      "activities": "Actividades y formación",
+      "blog": "Blog",
+      "members": "Socias",
+      "contact": "Contacto"
+    },
+    "footer": {
+      "menu": {
+        "title": "Menú",
+        "links": {
+          "company": "Empresa",
+          "projects": "Proyectos",
+          "blog": "Blog",
+          "members": "Socias",
+          "contact": "Contacto"
+        }
+      },
+      "usefulLinks": {
+        "title": "Enlaces interés",
+        "links": {
+          "cookies": "Política de cookies",
+          "legal": "Aviso legal",
+          "data": "Privacidad de datos"
+        }
+      },
+      "contact": {
+        "title": "Contacto",
+        "links": {
+          "sample": "Ejemplo"
+        }
+      }
+    }
+  },
+  "home": {
+    "title": "Inicio",
+    "seo": {
+      "title": "Inicio",
+      "description": "Página de inicio"
+    },
+    "components": {}
+  },
+  "about": {
+    "title": "Nosotros",
+    "seo": {
+      "title": "Nosotros",
+      "description": "Página sobre qué es Árbore"
+    }
+  },
+  "products": {
+    "title": "Productos",
+    "seo": {
+      "title": "Productos",
+      "description": "Los productos que tenemos"
+    }
+  },
+  "store": {
+    "title": "Tienda",
+    "seo": {
+      "title": "Tienda",
+      "description": "¿Qué tenemos en tienda?"
+    }
+  },
+  "activities": {
+    "title": "Actividades y formación",
+    "seo": {
+      "title": "Actividades",
+      "description": "Actividades y formación"
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "seo": {
+      "title": "Blog",
+      "description": "Nuestras noticias"
+    }
+  },
+  "members": {
+    "title": "Socias",
+    "seo": {
+      "title": "Socias",
+      "description": "Las miembras de Árbore"
+    }
+  },
+  "contact": {
+    "title": "Contacto",
+    "seo": {
+      "title": "Contacto",
+      "description": "Nuestra página de contacto"
+    }
+  },
+  "404": {
+    "title": "404 - No se ha encontrado!",
+    "seo": {
+      "title": "404",
+      "description": "404 Not Found"
+    }
+  }
+}

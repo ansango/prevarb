@@ -1,9 +1,6 @@
 import type { ReactElement } from "react";
 import { NextComponentType } from "next";
-
-import Navbar from "components/ui/Navbar";
-import Footer from "components/ui/Footer";
-import { ContainerLayout } from "components/ui/containers";
+import { ContainerLayout, Footer, Header, } from "components/ui";
 
 type Layout = {
   children: ReactElement;
@@ -12,7 +9,7 @@ type Layout = {
 const DefaultLayout: NextComponentType<Layout> = ({ children }) => {
   return (
     <ContainerLayout>
-      <Navbar />
+      <Header />
       <main>{children}</main>
       <Footer />
     </ContainerLayout>

@@ -1,48 +1,70 @@
 import type { GetStaticProps, NextPage } from "next";
 import { useI18n } from "next-localization";
-import PageSeo from "components/seo/PageSeo";
+import PageSeo from "components/utils/PageSeo";
+import DefaultLayout from "layouts/DefaultLayout";
+import { Calendar, ContactForm } from "components/ui";
+import { RecycleIcon } from "components/ui/icons";
 
-import tools from "lib/mock/tools";
+
 
 const Home: NextPage = () => {
   const { t } = useI18n();
-  const tTools = t("tools");
   return (
-    <>
-      <PageSeo title={t("title")} description={t("description")} />
+    <DefaultLayout>
+      <PageSeo title={t("home.seo.title")} description={t("home.seo.description")} />
       <main>
-        <h1 className="text-3xl font-bold text-center pb-5">{t("title")}</h1>
-        <h2 className="text-2xl italic text-center pb-5">{t("description")}</h2>
-        <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
-          {tools.map((tool: any) => {
-            return (
-              <a href={tool.url} target="_blank" rel="noreferrer" key={tool.name}>
-                <li className="border border-gray-200 rounded-lg p-5 hover:border-blue-500 hover:text-blue-500">
-                  <h3 className="text-xl font-semibold pb-3">{tool.name}</h3>
-                  <p>{tTools[tool.key]}</p>
-                </li>
-              </a>
-            );
-          })}
-        </ul>
+        <h1 className="text-3xl font-bold text-center pb-5">{t("home.title")}</h1>
+        <div className="py-10">
+          <h2 className="text-center text-green-600 uppercase text-3xl p-5 md:py-10">Principios</h2>
+          <div className="flex justify-center">
+            <div className="grid gap-10 md:gap-20 grid-cols-1 sm:grid-cols-2 md:grid-cols-4 text-green-600">
+              <div className="flex flex-col items-center">
+                <RecycleIcon className="text-7xl" />
+                <p>Ecologismo</p>
+              </div>
+              <div className="flex flex-col items-center">
+                <RecycleIcon className="text-7xl" />
+                <p>Comercio Justo</p>
+              </div>
+              <div className="flex flex-col items-center">
+                <RecycleIcon className="text-7xl" />
+                <p>Sostenibilidad</p>
+              </div>
+              <div className="flex flex-col items-center">
+                <RecycleIcon className="text-7xl" />
+                <p>Sostenibilidad</p>
+              </div>
+            </div>
+          </div>
+          <div className="flex justify-center pt-5">
+            <button className="border border-green-600 bg-gray-200 text-green-600 rounded-full px-10 py-2">Hazte Socia</button>
+          </div>
+        </div>
+        <div className="py-10">
+          <h2 className="text-3xl text-green-600 text-center">Nuestros productos</h2>
+        </div>
+        <div className="grid md:grid-cols-2 gap-20 bg-gray-200 py-10 md:p-20">
+          <div className="text-center">
+            <h2 className="text-3xl uppercase p-5 md:py-10">Actividad del mes</h2>
+            <p className="px-10 pb-10">Todos los meses organizamos talleres y clases de formación relacionados con un estilo de vida sostenible y una alimentación saludable</p>
+            <button className="uppercase bg-green-600 px-5 py-3 rounded-full text-white">Ver actividades</button>
+          </div>
+          <Calendar />
+        </div>
+        <div className="py-10">
+          <h2 className="uppercase text-center py-10">Vosotras</h2>
 
-        <p className="text-xl text-blue-500 pt-24 text-center">
-          <a
-            href="https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fnext-starter-v2.vercel.app%2F&tab=mobile"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-center hover:underline"
-          >
-            {t("performance")}
-          </a>
-        </p>
+        </div>
+        <div className="pt-12 pb-24 px-5 md:px-0">
+          <ContactForm />
+        </div>
       </main>
-    </>
+    </DefaultLayout>
   );
 };
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
-  const language = await import(`../locales/${locale}/home.json`);
+  const language = await import(`../locales/${locale}.json`);
 
   return {
     props: {

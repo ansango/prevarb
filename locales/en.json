@@ -1,0 +1,106 @@
+{
+  "common": {
+    "session": {
+      "account": "My account",
+      "login": "Login",
+      "logout": "Logout"
+    },
+    "nav": {
+      "about": "About",
+      "products": "Our products",
+      "store": "Store",
+      "activities": "Activities & training",
+      "blog": "Blog",
+      "members": "Members",
+      "contact": "Contact"
+    },
+    "footer": {
+      "menu": {
+        "title": "Menu",
+        "links": {
+          "company": "Company",
+          "projects": "Projects",
+          "blog": "Blog",
+          "members": "Members",
+          "contact": "Contact"
+        }
+      },
+      "usefulLinks": {
+        "title": "Useful Links",
+        "links": {
+          "cookies": "Cookies policy",
+          "legal": "Legal notice",
+          "data": "Privacy policy"
+        }
+      },
+      "contact": {
+        "title": "Contact",
+        "links": { "sample": "Sample" }
+      }
+    }
+  },
+  "home": {
+    "title": "Home",
+    "seo": {
+      "title": "Home",
+      "description": "A Home Page"
+    },
+    "components": {}
+  },
+  "about": {
+    "title": "title",
+    "seo": {
+      "title": "About",
+      "description": "About Page"
+    }
+  },
+  "products": {
+    "title": "Products",
+    "seo": {
+      "title": "Products",
+      "description": "Product Page"
+    }
+  },
+  "store": {
+    "title": "Store",
+    "seo": {
+      "title": "Store",
+      "description": "Store Page"
+    }
+  },
+  "activities": {
+    "title": "Activities",
+    "seo": {
+      "title": "Activities",
+      "description": "Activities Page"
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "seo": {
+      "title": "Blog",
+      "description": "Blog Page"
+    }
+  },
+  "members": {
+    "title": "Members",
+    "seo": {
+      "title": "Members",
+      "description": "Members Page"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "seo": {
+      "title": "Contact",
+      "description": "Contact Page"
+    }
+  },
+  "404": {
+    "title": "404",
+    "seo": {
+      "title": "404",
+      "description": "404 Page"
+    }
+  }
+}

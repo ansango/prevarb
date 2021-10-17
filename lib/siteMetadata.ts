@@ -1,0 +1,16 @@
+export const siteMetadata = {
+  title: "Arbore",
+  author: "Arbore",
+  headerTitle: "Arbore Coop",
+  description: "Arbore cooperativa",
+  language: "gl",
+  siteUrl: "arbore.coop",
+  siteLogo: "/static/images/logo.png",
+  image: "/static/images/profile.png",
+  email: "arbore@abore.coop",
+  twitter: "https://twitter.com/abore",
+  instagram: "https://instagram.com/arbore",
+  linkedin: "https://www.linkedin.com/in/arbore",
+  locale: "gl",
+  socialBanner: "",
+};

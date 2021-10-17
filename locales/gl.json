@@ -1,0 +1,108 @@
+{
+  "common": {
+    "session": {
+      "account": "A miña conta",
+      "login": "Iniciar sesión",
+      "logout": "Pechar sesión"
+    },
+    "nav": {
+      "about": "Nós",
+      "products": "Os nosos produtos",
+      "store": "Tenda",
+      "activities": "Actividades e formación",
+      "blog": "Blogue",
+      "members": "Socias",
+      "contact": "Contacto"
+    },
+    "footer": {
+      "menu": {
+        "title": "Menú",
+        "links": {
+          "company": "Empresa",
+          "projects": "Proxectos",
+          "blog": "Blog",
+          "members": "Socias",
+          "contact": "Contacto"
+        }
+      },
+      "usefulLinks": {
+        "title": "Ligazóns útiles",
+        "links": {
+          "cookies": "Política de cookies",
+          "legal": "Aviso legal",
+          "data": "Privacidade de datos"
+        }
+      },
+      "contact": {
+        "title": "Contacto",
+        "link": {
+          "sample": "Exemplo"
+        }
+      }
+    }
+  },
+  "home": {
+    "title": "Inicio",
+    "seo": {
+      "title": "Inicio",
+      "description": "Páxina de inicio"
+    },
+    "components": {}
+  },
+  "about": {
+    "title": "Nós",
+    "seo": {
+      "title": "Nós",
+      "description": "Páxina sobre Árbore"
+    }
+  },
+  "products": {
+    "title": "Productos",
+    "seo": {
+      "title": "Productos",
+      "description": "Os produtos que temos"
+    }
+  },
+  "store": {
+    "title": "Tienda",
+    "seo": {
+      "title": "Tienda",
+      "description": "Que temos en tenda?"
+    }
+  },
+  "activities": {
+    "title": "Actividades y formación",
+    "seo": {
+      "title": "Actividades",
+      "description": "Actividades e formación"
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "seo": {
+      "title": "Blog",
+      "description": "As nosas noticias"
+    }
+  },
+  "members": {
+    "title": "Socias",
+    "seo": {
+      "title": "Socias",
+      "description": "As  miembras"
+    }
+  },
+  "contact": {
+    "title": "Contacto",
+    "seo": {
+      "title": "Contacto",
+      "description": "A nosa páxina de contacto"
+    }
+  },
+  "404": {
+    "title": "404 - Non se atopou!",
+    "seo": {
+      "title": "404",
+      "description": "404 Not Found"
+    }
+  }
+}

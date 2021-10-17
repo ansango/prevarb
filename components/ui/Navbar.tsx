@@ -1,38 +1,21 @@
-import { useRouter } from "next/router";
-import Link from "next/link";
-import { namespace } from "locales/namespace";
-
+import Link from 'next/link';
+import { useI18n } from 'next-localization';
 const Navbar = () => {
-  const { asPath, locale, locales, defaultLocale } = useRouter();
-
-  const langsRoutes = locales
-    ?.map((loc: string) => {
-      const { flag }: any = namespace[loc];
-
-      return {
-        route: defaultLocale !== loc ? `/${loc}${asPath}` : asPath,
-        loc,
-        flag,
-      };
-    })
-    .filter(({ loc }) => loc !== locale);
-
+  const { t } = useI18n();
   return (
-    <header className="flex items-center justify-between py-10">
-      <p className="text-2xl font-semibold">
-        <Link href="/" passHref>
-          next-starter v2
-        </Link>
-      </p>
-
-      <ul>
-        {langsRoutes?.map(({ route, loc, flag }) => (
-          <Link key={route} href={route} locale={loc}>
-            {flag}
-          </Link>
-        ))}
+    <nav className="py-3 bg-green-600">
+      <ul className="hidden md:flex items-center justify-center">
+        {Object.entries(t('common.nav')).map(([key, value]) => {
+          return (
+            <li className="mx-2 text-white hover:underline" key={key}>
+              <Link href={`/${key}`}>
+                <a>{value}</a>
+              </Link>
+            </li>
+          );
+        })}
       </ul>
-    </header>
+    </nav>
   );
 };
 
