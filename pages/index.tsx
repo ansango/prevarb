@@ -2,7 +2,7 @@ import type { GetStaticProps, NextPage } from "next";
 import { useI18n } from "next-localization";
 import PageSeo from "components/utils/PageSeo";
 import DefaultLayout from "layouts/DefaultLayout";
-import { Calendar, ContactForm } from "components/ui";
+import { Calendar, ContactForm, Slider } from "components/ui";
 import { RecycleIcon } from "components/ui/icons";
 
 
@@ -14,6 +14,9 @@ const Home: NextPage = () => {
       <PageSeo title={t("home.seo.title")} description={t("home.seo.description")} />
       <main>
         <h1 className="text-3xl font-bold text-center pb-5">{t("home.title")}</h1>
+        <div className="py-10 h-96">
+          <Slider />
+        </div>
         <div className="py-10">
           <h2 className="text-center text-green-600 uppercase text-3xl p-5 md:py-10">Principios</h2>
           <div className="flex justify-center">
