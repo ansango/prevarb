@@ -11,6 +11,8 @@ import {
   HiOutlineUser as UserIcon,
   HiOutlineLogout as LogoutIcon,
   HiChevronDown as ChevronDownIcon,
+  HiOutlineMenuAlt4 as MenuIcon,
+  HiOutlineX as XIcon,
 } from "react-icons/hi";
 
 export {
@@ -23,4 +25,6 @@ export {
   UserIcon,
   LogoutIcon,
   ChevronDownIcon,
+  MenuIcon,
+  XIcon,
 };

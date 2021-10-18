@@ -6,6 +6,7 @@
       "logout": "Logout"
     },
     "nav": {
+      "home": "Home",
       "about": "About",
       "products": "Our products",
       "store": "Store",
