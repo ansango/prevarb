@@ -36,11 +36,11 @@ body {
 }
 
 .react-calendar {
-  @apply max-w-sm text-primary mx-auto;
+  @apply max-w-sm text-primary mx-auto px-2;
 }
 
 .react-calendar__month-view__weekdays__weekday {
-  @apply capitalize text-center p-4;
+  @apply capitalize text-center p-2 sm:p-4;
 }
 
 .react-calendar__month-view__weekdays__weekday > abbr {
@@ -48,5 +48,5 @@ body {
 }
 
 .react-calendar__tile.react-calendar__month-view__days__day {
-  @apply p-4;
+  @apply p-2 sm:p-4;
 }

@@ -6,4 +6,10 @@ import {
   FaRecycle as RecycleIcon,
 } from "react-icons/fa";
 
-export { FBIcon, TWIcon, IGIcon, YTIcon, RecycleIcon };
+import {
+  HiOutlineFlag as FlagIcon,
+  HiOutlineUser as UserIcon,
+  HiOutlineLogout as LogoutIcon,
+} from "react-icons/hi";
+
+export { FBIcon, TWIcon, IGIcon, YTIcon, RecycleIcon, FlagIcon, UserIcon, LogoutIcon };
