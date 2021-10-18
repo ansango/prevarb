@@ -35,7 +35,8 @@ const Header = () => {
                 </ul>
 
             </div>
-            <div className="py-14 text-center bg-red-100">
+            <div className="py-12 text-center text-5xl">
+                <p>Árbore</p>
             </div>
             <Navbar />
         </header>

@@ -13,14 +13,13 @@ const Home: NextPage = () => {
     <DefaultLayout>
       <PageSeo title={t("home.seo.title")} description={t("home.seo.description")} />
       <main>
-        <h1 className="text-3xl font-bold text-center pb-5">{t("home.title")}</h1>
-        <div className="py-10 h-96">
+        <div className="mt-20 h-96">
           <Slider />
         </div>
         <div className="py-10">
-          <h2 className="text-center text-green-600 uppercase text-3xl p-5 md:py-10">Principios</h2>
+          <h2 className="text-center  uppercase text-3xl p-5 md:py-10">Principios</h2>
           <div className="flex justify-center">
-            <div className="grid gap-10 md:gap-20 grid-cols-1 sm:grid-cols-2 md:grid-cols-4 text-green-600">
+            <div className="grid gap-10 md:gap-20 grid-cols-1 sm:grid-cols-2 md:grid-cols-4 ">
               <div className="flex flex-col items-center">
                 <RecycleIcon className="text-7xl" />
                 <p>Ecologismo</p>
@@ -40,17 +39,17 @@ const Home: NextPage = () => {
             </div>
           </div>
           <div className="flex justify-center pt-5">
-            <button className="border border-green-600 bg-gray-200 text-green-600 rounded-full px-10 py-2">Hazte Socia</button>
+            <button className="border border-primary bg-gray-200  rounded-full px-10 py-2">Hazte Socia</button>
           </div>
         </div>
         <div className="py-10">
-          <h2 className="text-3xl text-green-600 text-center">Nuestros productos</h2>
+          <h2 className="text-3xl  text-center">Nuestros productos</h2>
         </div>
         <div className="grid md:grid-cols-2 gap-20 bg-gray-200 py-10 md:p-20">
           <div className="text-center">
             <h2 className="text-3xl uppercase p-5 md:py-10">Actividad del mes</h2>
             <p className="px-10 pb-10">Todos los meses organizamos talleres y clases de formación relacionados con un estilo de vida sostenible y una alimentación saludable</p>
-            <button className="uppercase bg-green-600 px-5 py-3 rounded-full text-white">Ver actividades</button>
+            <button className="uppercase bg-primary px-5 py-3 rounded-full text-white">Ver actividades</button>
           </div>
           <Calendar />
         </div>

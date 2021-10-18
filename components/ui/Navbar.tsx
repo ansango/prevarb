@@ -3,7 +3,7 @@ import { useI18n } from 'next-localization';
 const Navbar = () => {
   const { t } = useI18n();
   return (
-    <nav className="py-3 bg-green-600">
+    <nav className="py-3 bg-primary">
       <ul className="hidden md:flex items-center justify-center">
         {Object.entries(t('common.nav')).map(([key, value]) => {
           return (
