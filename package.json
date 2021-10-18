@@ -11,16 +11,16 @@
     "postinstall": "husky install"
   },
   "dependencies": {
+    "@headlessui/react": "^1.4.1",
     "@tailwindcss/forms": "^0.3.4",
-    "moment": "^2.29.1",
     "next": "11.1.2",
     "next-localization": "^0.11.0",
-    "next-themes": "^0.0.15",
     "preact": "^10.5.14",
     "react": "17.0.2",
     "react-calendar": "^3.4.0",
     "react-dom": "17.0.2",
-    "react-icons": "^4.3.1"
+    "react-icons": "^4.3.1",
+    "swiper": "^7.0.8"
   },
   "devDependencies": {
     "@types/react": "17.0.24",

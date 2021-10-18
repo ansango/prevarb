@@ -1,41 +1,27 @@
-import { useRouter } from "next/router";
+
+
 import Link from "next/link";
-import { useI18n } from 'next-localization';
-import { Navbar } from ".";
+import { LogoutIcon, UserIcon } from "./icons";
+import { MobileNavbar, Navbar } from ".";
+import LangSelector from './LangSelector';
 
 const Header = () => {
-    const { t } = useI18n();
-    const { asPath, locale, locales, defaultLocale } = useRouter();
-    const langsRoutes = locales
-        ?.map((loc: string) => {
-            return {
-                route: defaultLocale !== loc ? `/${loc}${asPath}` : asPath,
-                loc,
-
-            };
-        })
-        .filter(({ loc }) => loc !== locale);
-
     return (
         <header>
-            <div className="flex justify-between bg-gray-200 py-3">
-                <ul>
-                    {langsRoutes?.map(({ route, loc }) => (
-                        <Link key={route} href={route} locale={loc} passHref>
-                            <span className="mx-2 cursor-pointer uppercase">
-                                {loc}
-                            </span>
-                        </Link>
-                    ))}
+            <div className="flex justify-between md:justify-end bg-gray-100 py-3">
+                <MobileNavbar />
+                <ul className="flex space-x-2 mr-2">
+                    <LangSelector />
+                    <button className="w-9 h-9 flex items-center justify-center bg-gray-200 rounded-md focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
+                        <UserIcon className="h-5 w-5 text-primary" />
+                    </button>
+                    <button className="w-9 h-9 flex items-center justify-center bg-gray-200 rounded-md focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
+                        <LogoutIcon className="h-5 w-5 text-primary" />
+                    </button>
                 </ul>
-                <ul className="flex">
-                    <li className="mx-4">{t('common.session.account')}</li>
-                    <li className="mx-4 hidden">{t('common.session.login')}</li>
-                    <li className="mx-4">{t('common.session.logout')}</li>
-                </ul>
-
             </div>
-            <div className="py-14 text-center bg-red-100">
+            <div className="py-12 text-center text-5xl">
+                <Link href="/">Árbore</Link>
             </div>
             <Navbar />
         </header>

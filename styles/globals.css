@@ -2,12 +2,45 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Caviar Dreams";
+  src: url(/fonts/CaviarDreams.woff2) format("woff2");
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: "Caviar Dreams";
+  src: url(/fonts/CaviarDreams-Bold.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Caviar Dreams";
+  src: url(/fonts/CaviarDreams-Italic.woff2) format("woff2");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Caviar Dreams";
+  src: url(/fonts/CaviarDreams-BoldItalic.woff2) format("woff2");
+  font-weight: bold;
+  font-style: italic;
+}
+
+html {
+  min-width: 360px;
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply text-primary;
+}
+
 .react-calendar {
-  @apply max-w-sm text-green-600 mx-auto;
+  @apply max-w-sm text-primary mx-auto px-2;
 }
 
 .react-calendar__month-view__weekdays__weekday {
-  @apply capitalize text-center p-4;
+  @apply capitalize text-center p-2 sm:p-4;
 }
 
 .react-calendar__month-view__weekdays__weekday > abbr {
@@ -15,5 +48,5 @@
 }
 
 .react-calendar__tile.react-calendar__month-view__days__day {
-  @apply p-4;
+  @apply p-2 sm:p-4;
 }

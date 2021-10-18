@@ -6,6 +6,7 @@
       "logout": "Cerrar sesión"
     },
     "nav": {
+      "home": "Inicio",
       "about": "Nosotros",
       "products": "Nuestros productos",
       "store": "Tienda",

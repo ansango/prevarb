@@ -13,16 +13,16 @@ const Footer = () => {
     <footer >
       <div className="pt-10 pb-5">
         <ul className="flex justify-center pb-3">
-          <li className="w-8 h-8 text-green-600 text-xl">
+          <li className="w-8 h-8  text-xl">
             <FBIcon />
           </li>
-          <li className="w-8 h-8 text-green-600 text-xl">
+          <li className="w-8 h-8  text-xl">
             <TWIcon />
           </li>
-          <li className="w-8 h-8 text-green-600 text-xl">
+          <li className="w-8 h-8  text-xl">
             <IGIcon />
           </li>
-          <li className="w-8 h-8 text-green-600 text-xl">
+          <li className="w-8 h-8  text-xl">
             <YTIcon />
           </li>
         </ul>
@@ -35,7 +35,7 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <div className="bg-green-600 text-white p-10">
+      <div className="bg-primary text-white p-10">
         <div className="flex justify-center pb-10">
           <div className="grid grid-cols-2 gap-3 md:grid-cols-3 md:gap-10">
             <nav>
