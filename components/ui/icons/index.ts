@@ -10,6 +10,17 @@ import {
   HiOutlineFlag as FlagIcon,
   HiOutlineUser as UserIcon,
   HiOutlineLogout as LogoutIcon,
+  HiChevronDown as ChevronDownIcon,
 } from "react-icons/hi";
 
-export { FBIcon, TWIcon, IGIcon, YTIcon, RecycleIcon, FlagIcon, UserIcon, LogoutIcon };
+export {
+  FBIcon,
+  TWIcon,
+  IGIcon,
+  YTIcon,
+  RecycleIcon,
+  FlagIcon,
+  UserIcon,
+  LogoutIcon,
+  ChevronDownIcon,
+};
