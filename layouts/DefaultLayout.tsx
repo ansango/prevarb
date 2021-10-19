@@ -1,9 +1,11 @@
 import type { ReactElement } from "react";
 import { NextComponentType } from "next";
-import { ContainerLayout, Footer, Header, } from "components/ui";
+import { ContainerLayout } from "components/ui/containers";
+import { Footer, Header } from "components/ui/navs";
+
 
 type Layout = {
-  children: ReactElement;
+  children: ReactElement | ReactElement[];
 };
 
 const DefaultLayout: NextComponentType<Layout> = ({ children }) => {

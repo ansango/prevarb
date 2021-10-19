@@ -1,15 +1,16 @@
 
 
 import Link from "next/link";
-import { LogoutIcon, UserIcon } from "./icons";
-import { MobileNavbar, Navbar } from ".";
+import NavMobile from './NavMobile';
+import NavDesktop from './NavDesktop';
 import LangSelector from './LangSelector';
+import { LogoutIcon, UserIcon } from "../icons";
 
 const Header = () => {
     return (
         <header>
             <div className="flex justify-between md:justify-end bg-gray-100 py-3">
-                <MobileNavbar />
+                <NavMobile />
                 <ul className="flex space-x-2 mr-2">
                     <LangSelector />
                     <button className="w-9 h-9 flex items-center justify-center bg-gray-200 rounded-md focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
@@ -23,7 +24,7 @@ const Header = () => {
             <div className="py-10 md:py-12 text-center text-5xl">
                 <Link href="/">Árbore</Link>
             </div>
-            <Navbar />
+            <NavDesktop />
         </header>
     )
 }

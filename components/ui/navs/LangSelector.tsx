@@ -1,6 +1,6 @@
 
 import { Menu, Transition } from '@headlessui/react'
-import { ChevronDownIcon } from './icons'
+import { ChevronDownIcon } from '../icons'
 import { useRouter } from 'next/router';
 import Link from "next/link";
 import { Fragment } from 'react';

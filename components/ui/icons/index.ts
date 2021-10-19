@@ -13,6 +13,8 @@ import {
   HiChevronDown as ChevronDownIcon,
   HiOutlineMenuAlt4 as MenuIcon,
   HiOutlineX as XIcon,
+  HiOutlineStar as StarIconEmpty,
+  HiStar as StarIconFull,
 } from "react-icons/hi";
 
 export {
@@ -27,4 +29,6 @@ export {
   ChevronDownIcon,
   MenuIcon,
   XIcon,
+  StarIconEmpty,
+  StarIconFull,
 };

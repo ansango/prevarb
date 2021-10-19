@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { siteMetadata } from "lib/siteMetadata";
 import { useI18n } from 'next-localization';
-import { FBIcon, IGIcon, TWIcon, YTIcon } from './icons';
+import { FBIcon, IGIcon, TWIcon, YTIcon } from '../icons';
 
 
 
