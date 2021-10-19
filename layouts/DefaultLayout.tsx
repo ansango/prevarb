@@ -10,7 +10,7 @@ const DefaultLayout: NextComponentType<Layout> = ({ children }) => {
   return (
     <ContainerLayout>
       <Header />
-      <main>{children}</main>
+      {children}
       <Footer />
     </ContainerLayout>
   );

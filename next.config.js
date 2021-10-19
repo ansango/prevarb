@@ -3,7 +3,9 @@
 module.exports = {
   experimental: { esmExternals: true },
   reactStrictMode: true,
-  // images: {},
+  images: {
+    domains: ["source.unsplash.com"],
+  },
   async headers() {
     return [
       {

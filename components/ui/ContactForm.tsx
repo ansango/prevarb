@@ -17,7 +17,7 @@ const ContactForm = () => {
                     rounded-md
                     border-gray-300
                     shadow-sm
-                    focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50
+                    focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50
                   " defaultValue="Tipo de consulta">
                             <option disabled>Tipo de consulta</option>
                             <option>Información</option>
@@ -33,7 +33,7 @@ const ContactForm = () => {
                     rounded-md
                     border-gray-300
                     shadow-sm
-                    focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50
+                    focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50
                   " defaultValue="Eres cliente">
                             <option disabled>Eres cliente</option>
                             <option>Si</option>
@@ -48,7 +48,7 @@ const ContactForm = () => {
                     rounded-md
                     border-gray-300
                     shadow-sm
-                    focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50
+                    focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50
                   " placeholder="Nombre*" />
                     </label>
                     <label className="block">
@@ -59,7 +59,7 @@ const ContactForm = () => {
                     rounded-md
                     border-gray-300
                     shadow-sm
-                    focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50
+                    focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50
                   " placeholder="Apellidos*" />
                     </label>
                     <label className="block">
@@ -70,7 +70,7 @@ const ContactForm = () => {
                     rounded-md
                     border-gray-300
                     shadow-sm
-                    focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50
+                    focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50
                   " placeholder="Email*" />
                     </label>
                     <label className="block">
@@ -81,7 +81,7 @@ const ContactForm = () => {
                     rounded-md
                     border-gray-300
                     shadow-sm
-                    focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50
+                    focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50
                   " placeholder="Teléfono*" />
                     </label>
                 </div>
@@ -94,7 +94,7 @@ const ContactForm = () => {
                     rounded-md
                     border-gray-300
                     shadow-sm
-                    focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50
+                    focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50
                   " placeholder="Tu mensaje*"></textarea>
                     </label>
                     <div className="block">
@@ -104,12 +104,12 @@ const ContactForm = () => {
                                     <input type="checkbox" className="
                           rounded
                           border-gray-300
-                          text-indigo-600
+                          text-primary
                           shadow-sm
-                          focus:border-indigo-300
+                          focus:border-primary
                           focus:ring
                           focus:ring-offset-0
-                          focus:ring-indigo-200
+                          focus:ring-primary
                           focus:ring-opacity-50
                         "  />
                                     <span className="ml-2">He leido y acepto los términos y condiciones de uso</span>
