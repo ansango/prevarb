@@ -6,17 +6,20 @@
   font-family: "Caviar Dreams";
   src: url(/fonts/CaviarDreams.woff2) format("woff2");
   font-weight: 200;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Caviar Dreams";
   src: url(/fonts/CaviarDreams-Bold.woff2) format("woff2");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Caviar Dreams";
   src: url(/fonts/CaviarDreams-Italic.woff2) format("woff2");
   font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
@@ -24,6 +27,7 @@
   src: url(/fonts/CaviarDreams-BoldItalic.woff2) format("woff2");
   font-weight: bold;
   font-style: italic;
+  font-display: swap;
 }
 
 html {
