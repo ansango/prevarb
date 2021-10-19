@@ -79,7 +79,7 @@ const Navbar = () => {
             );
           } else {
             return (
-              <span className="hidden"></span>
+              <span className="hidden" key={key}></span>
             );
           }
         })}
