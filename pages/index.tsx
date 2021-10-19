@@ -9,7 +9,7 @@ import { ButtonPrimary } from "components/ui/buttons";
 import { BannerStatic, Calendar, Review, Slider } from "components/ui/blocks";
 import { Subtitle } from "components/ui/titles";
 import { ContactForm } from "components/ui/forms";
-
+import avatar from "public/static/images/blog/sample.png";
 const imgSlider = ImagesSlider.map((image: any, index: number) => (<Image src={image.src} key={image.id} alt={image.alt} />))
 const imgCarousel = ImagesCarousel.map((image: any, index: number) => (<div key={index} className="text-center"><div className="pb-5 px-5 md:px-20"><Image className="rounded-full" src={image.src} key={image.id} alt={image.alt} width={640} height={640} /><p className="py-5"> articulo</p></div></div >))
 
@@ -45,7 +45,35 @@ const Home: NextPage = () => {
         </div>
         <ContainerContent>
           <Subtitle text="Vosotras" />
-          <Review user={{ id: 1, fullName: "Francisco Jimenez", avatar: "/public/static/images/blog/sample.png" }} review={{ title: "Lo mejor en comercio local", content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", date: "", rating: 4 }} />
+          <Review user={{ id: 1, fullName: "Francisco Jimenez", avatar: avatar }} review={{
+            title: "Lo mejor en comercio local", content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", date: new Date().toLocaleDateString("es-ES", {
+              year: 'numeric',
+              month: 'short',
+              day: 'numeric',
+            }), rating: 5
+          }} />
+
+          <Review user={{ id: 1, fullName: "Francisco Jimenez", avatar: avatar }} review={{
+            title: "Lo mejor en comercio local", content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", date: new Date().toLocaleDateString("es-ES", {
+              year: 'numeric',
+              month: 'short',
+              day: 'numeric',
+            }), rating: 4
+          }} />
+          <Review user={{ id: 1, fullName: "Francisco Jimenez", avatar: avatar }} review={{
+            title: "Lo mejor en comercio local", content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", date: new Date().toLocaleDateString("es-ES", {
+              year: 'numeric',
+              month: 'short',
+              day: 'numeric',
+            }), rating: 3
+          }} />
+          <Review user={{ id: 1, fullName: "Francisco Jimenez", avatar: avatar }} review={{
+            title: "Lo mejor en comercio local", content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", date: new Date().toLocaleDateString("es-ES", {
+              year: 'numeric',
+              month: 'short',
+              day: 'numeric',
+            }), rating: 5
+          }} />
         </ContainerContent>
         <div className="pt-12 pb-24 px-5 md:px-0">
           <ContactForm />
@@ -54,6 +82,8 @@ const Home: NextPage = () => {
     </DefaultLayout>
   );
 };
+
+
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
   const language = await import(`../locales/${locale}.json`);
