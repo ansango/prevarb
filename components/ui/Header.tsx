@@ -20,7 +20,7 @@ const Header = () => {
                     </button>
                 </ul>
             </div>
-            <div className="py-12 text-center text-5xl">
+            <div className="py-10 md:py-12 text-center text-5xl">
                 <Link href="/">Árbore</Link>
             </div>
             <Navbar />
