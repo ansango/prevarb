@@ -6,6 +6,9 @@ import { Calendar, ContactForm, Slider } from "components/ui";
 import { RecycleIcon } from "components/ui/icons";
 import Image from 'next/image'
 
+import { ImagesSlider, ImagesCarousel } from "components/images";
+
+
 // generate text random
 
 const generateText = (): string => {
@@ -17,34 +20,9 @@ const generateText = (): string => {
 };
 
 
-// generate randome image from unsplash
-const generateImage = (w: number, h: number): string => {
-  const random = Math.floor(Math.random() * 10);
-  return `https://source.unsplash.com/random/${w}x${h}?${random}`;
-};
+const imgSlider = ImagesSlider.map((image: any, index: number) => (<Image src={image.src} key={image.id} alt={image.alt} />))
+const imgCarousel = ImagesCarousel.map((image: any, index: number) => (<div key={index} className="text-center"><div className="pb-5 px-5 md:px-20"><Image className="rounded-full" src={image.src} key={image.id} alt={image.alt} width={640} height={640} /><p className="py-5"> {generateText()}</p></div></div >))
 
-
-const images = [
-  <Image key="carrot" src={generateImage(196, 196)} width={1920} height={1080} />,
-  <Image key="fruits" src={generateImage(196, 196)} width={1920} height={1080} />,
-  <Image key="carrot" src={generateImage(196, 196)} width={1920} height={1080} />,
-  <Image key="fruits" src={generateImage(196, 196)} width={1920} height={1080} />,
-  <Image key="carrot" src={generateImage(196, 196)} width={1920} height={1080} />,
-  <Image key="fruits" src={generateImage(196, 196)} width={1920} height={1080} />
-]
-
-const Card = () => {
-  return (
-    <div className="text-center">
-      <div className="pb-5 px-5 md:px-0">
-        <Image src={generateImage(196, 196)} className="rounded-full" width={196} height={196} />
-      </div>
-      {generateText()}
-    </div>
-  )
-}
-
-const cards = [<Card key="1" />, <Card key="2" />, <Card key="3" />, <Card key="4" />, <Card key="5" />, <Card key="6" />]
 
 
 
@@ -55,7 +33,7 @@ const Home: NextPage = () => {
       <PageSeo title={t("home.seo.title")} description={t("home.seo.description")} />
       <main>
         <div className="md:mt-20 md:h-96">
-          <Slider elements={images} navigation={true} />
+          <Slider elements={imgSlider} navigation={true} />
         </div>
         <div className="py-10">
           <h2 className="text-center uppercase text-2xl md:text-3xl p-5 md:py-10">Principios</h2>
@@ -83,10 +61,10 @@ const Home: NextPage = () => {
             <button className="border border-primary bg-gray-200  rounded-full px-10 py-2">Hazte Socia</button>
           </div>
         </div>
-        <div className="py-10">
+        <div className="py-16">
           <h2 className="text-center uppercase text-2xl md:text-3xl p-5 md:py-10">Nuestros productos</h2>
-          <div className="">
-            <Slider elements={cards} navigation={true} loop slidesPerView={3} spaceBetween={1} />
+          <div className="md:px-5">
+            <Slider elements={imgCarousel} navigation={true} loop slidesPerView={3} spaceBetween={10} />
           </div>
         </div>
         <div className="grid md:grid-cols-2 gap-20 bg-gray-200 py-10 md:p-20">
