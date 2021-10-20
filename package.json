@@ -13,6 +13,7 @@
   "dependencies": {
     "@headlessui/react": "^1.4.1",
     "@tailwindcss/forms": "^0.3.4",
+    "@tailwindcss/line-clamp": "^0.2.2",
     "next": "11.1.2",
     "next-localization": "^0.11.0",
     "preact": "^10.5.14",
