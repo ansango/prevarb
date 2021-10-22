@@ -17,4 +17,6 @@ const ContainerContent: FC<Container> = ({ children }) => {
   return <div className="py-10 space-y-10 md:py-16">{children}</div>;
 };
 
+
+
 export { ContainerLayout, ContainerContent };

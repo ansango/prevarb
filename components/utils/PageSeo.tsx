@@ -31,4 +31,4 @@ const PageSeo: FC<PageSeoProps> = ({ title, description }) => {
   );
 };
 
-export default PageSeo;
+export default PageSeo

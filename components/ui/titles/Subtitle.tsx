@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC, memo } from "react";
 
 type Props = {
     text: string;
@@ -10,4 +10,4 @@ const Subtitle: FC<Props> = ({ text }) => {
     )
 }
 
-export default Subtitle
+export default memo(Subtitle)

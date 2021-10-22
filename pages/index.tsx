@@ -3,7 +3,7 @@ import { useI18n } from "next-localization";
 import PageSeo from "components/utils/PageSeo";
 import DefaultLayout from "layouts/DefaultLayout";
 import Image from 'next/image'
-import { ImagesSlider, ImagesCarousel } from "components/images";
+import { ImagesSlider } from "components/images";
 import { ContainerContent } from "components/ui/containers";
 import { ButtonPrimary } from "components/ui/buttons";
 import { BannerStatic, Calendar, Review, Slider } from "components/ui/blocks";
@@ -11,16 +11,16 @@ import { Subtitle } from "components/ui/titles";
 import { ContactForm } from "components/ui/forms";
 import avatar from "public/static/images/blog/sample.png";
 const imgSlider = ImagesSlider.map((image: any, index: number) => (<Image src={image.src} key={image.id} alt={image.alt} />))
-const imgCarousel = ImagesCarousel.map((image: any, index: number) => (<div key={index} className="text-center"><div className="pb-5 px-5 md:px-20"><Image className="rounded-full" src={image.src} key={image.id} alt={image.alt} width={640} height={640} /><p className="py-5"> articulo</p></div></div >))
 
 const Home: NextPage = () => {
   const { t } = useI18n();
+  console.log("Home");
   return (
     <DefaultLayout>
       <PageSeo title={t("home.seo.title")} description={t("home.seo.description")} />
       <main>
         <div className="md:mt-20 md:h-96">
-          <Slider elements={imgSlider} navigation={true} />
+          <Slider />
         </div>
         <ContainerContent>
           <Subtitle text="Principios" />
@@ -31,7 +31,7 @@ const Home: NextPage = () => {
         </ContainerContent>
         <ContainerContent>
           <Subtitle text="Nuestros productos" />
-          <Slider elements={imgCarousel} navigation={true} loop slidesPerView={3} spaceBetween={10} />
+          {/* <Slider elements={imgCarousel} navigation={true} loop slidesPerView={3} spaceBetween={10} /> */}
         </ContainerContent>
         <div className="grid md:grid-cols-2 gap-20 bg-gray-200 py-10 md:py-16">
           <div className="text-center space-y-10 m-auto">
