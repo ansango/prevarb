@@ -3,13 +3,7 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  extends: [
-    "plugin:react/recommended",
-    "next/core-web-vitals",
-    "standard",
-    "prettier",
-    "plugin:@typescript-eslint/recommended",
-  ],
+  extends: ["plugin:react/recommended", "next/core-web-vitals", "standard", "prettier"],
   parser: "@typescript-eslint/parser",
   parserOptions: {
     ecmaFeatures: {
