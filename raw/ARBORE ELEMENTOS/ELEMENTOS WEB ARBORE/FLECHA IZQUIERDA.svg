@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="28.594" height="39.25" viewBox="0 0 28.594 39.25">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #416729;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="FLECHA_IZQUIERDA" data-name="FLECHA IZQUIERDA" class="cls-1" d="M41.125,1622.85l28.6-19.64v39.27Z" transform="translate(-41.125 -1603.22)"/>
+</svg>
