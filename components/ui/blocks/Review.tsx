@@ -21,7 +21,7 @@ type ReviewProps = {
 }
 
 const Rating = ({ rating }: { rating: number }) => {
-    const maxRating: number = 5;
+    const maxRating = 5;
     return (
         <div className="flex">
             {Array.from({ length: rating }, (_, i) => i + 1).map(i => (
