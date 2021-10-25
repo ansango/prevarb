@@ -38,15 +38,74 @@
         "title": "Contact",
         "links": { "sample": "Sample" }
       }
+    },
+    "contactForm": {
+      "request": {
+        "select": "Type of request",
+        "options": {
+          "default": "Type of request",
+          "information": "Information",
+          "members": "Members",
+          "other": "Other"
+        }
+      },
+      "member": {
+        "select": "Member",
+        "options": {
+          "default": "Member",
+          "yes": "Yes",
+          "no": "No"
+        }
+      },
+      "firstName": "First name",
+      "lastName": "Last name",
+      "email": "Email",
+      "phone": "Phone",
+      "message": "Your message",
+      "privacy": "I read and agree with privacy",
+      "send": "Send"
+    },
+    "review": {
+      "showButton": "Show more",
+      "hideButton": "Hide"
     }
   },
   "home": {
-    "title": "Home",
+    "title": "Your green store in Vigo",
     "seo": {
       "title": "Home",
-      "description": "A Home Page"
+      "description": "Your green store in Vigo"
     },
-    "components": {}
+    "components": {
+      "values": {
+        "h2": "Values",
+        "values": {
+          "value1": "Conscious consumption",
+          "value2": "Fair trade",
+          "value3": "Environmentalism",
+          "value4": "Sustainability"
+        }
+      },
+      "products": {
+        "h2": "Our products",
+        "values": {
+          "product1": "Sustainable food",
+          "product2": "Organic fruit and vegetables",
+          "product3": "Organic drinks",
+          "product4": "Nutritional supplements",
+          "product5": "Personal hygiene",
+          "product6": "Cosmetics"
+        }
+      },
+      "activities": {
+        "h2": "Month's activities",
+        "description": "Every month we organize workshops and training classes related to sustainable lifestyle and healthy eating.",
+        "btn": "See more"
+      },
+      "reviews": {
+        "h2": "Your reviews"
+      }
+    }
   },
   "about": {
     "title": "title",

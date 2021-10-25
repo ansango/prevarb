@@ -1,2 +1,3 @@
 import Subtitle from "./Subtitle";
-export { Subtitle };
+import Title from "./Title";
+export { Title, Subtitle };

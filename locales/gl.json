@@ -40,15 +40,71 @@
           "sample": "Exemplo"
         }
       }
+    },
+    "contactForm": {
+      "request": {
+        "select": "Tipo de consulta",
+        "options": {
+          "default": "Tipo de consulta",
+          "information": "Información",
+          "members": "Socios",
+          "other": "Otra"
+        }
+      },
+      "member": {
+        "select": "Eres miembro",
+        "options": {
+          "default": "Eres miembro",
+          "yes": "Sí",
+          "no": "No"
+        }
+      },
+      "firstName": "Nombre",
+      "lastName": "Apellido",
+      "email": "Email",
+      "phone": "Teléfono",
+      "message": "Tú mensaje",
+      "privacy": "He leído y acepto la política de privacidad",
+      "send": "Enviar"
+    },
+    "review": {
+      "showButton": "Mostrar máis",
+      "hideButton": "Ocultar"
     }
   },
   "home": {
-    "title": "Inicio",
+    "title": "Tenda ecolóxica en Vigo",
     "seo": {
-      "title": "Inicio",
-      "description": "Páxina de inicio"
+      "title": "Tenda ecolóxica en Vigo",
+      "description": "Tenda ecolóxica en Vigo"
     },
-    "components": {}
+    "components": {
+      "values": {
+        "h2": "Principios",
+        "values": {
+          "value1": "Consumo consciente",
+          "value2": "Comercio xusto",
+          "value3": "Ecoloxismo",
+          "value4": "Sostenibilidad"
+        }
+      },
+      "products": {
+        "h2": "Nuestos produtos",
+        "values": {
+          "product1": "Alimentación sostible",
+          "product2": "Froita e verdura bio",
+          "product3": "Bebidas ecológicas",
+          "product4": "Suplementos nutritivos",
+          "product5": "Hixiene personal",
+          "product6": "Cosmética"
+        }
+      },
+      "activities": {
+        "h2": "Actividades e formación",
+        "description": "Cada mes organizamos obradoiros e clases formativas relacionadas co estilo de vida sostible e a alimentación saudable",
+        "btn": "Ver actividades"
+      }
+    }
   },
   "about": {
     "title": "Nós",

@@ -40,21 +40,80 @@
           "sample": "Ejemplo"
         }
       }
+    },
+    "contactForm": {
+      "request": {
+        "select": "Tipo de consulta",
+        "options": {
+          "default": "Tipo de consulta",
+          "information": "Información",
+          "members": "Socios",
+          "other": "Otra"
+        }
+      },
+      "member": {
+        "select": "Eres miembro",
+        "options": {
+          "default": "Eres miembro",
+          "yes": "Sí",
+          "no": "No"
+        }
+      },
+      "firstName": "Nombre",
+      "lastName": "Apellido",
+      "email": "Email",
+      "phone": "Teléfono",
+      "message": "Tú mensaje",
+      "privacy": "He leído y acepto la política de privacidad",
+      "send": "Enviar"
+    },
+    "review": {
+      "showButton": "Mostrar más",
+      "hideButton": "Ocultar"
     }
   },
   "home": {
-    "title": "Inicio",
+    "title": "Tu tienda ecológica en Vigo",
     "seo": {
       "title": "Inicio",
-      "description": "Página de inicio"
+      "description": "Tu tienda ecológica en Vigo"
     },
-    "components": {}
+    "components": {
+      "values": {
+        "h2": "Principios",
+        "values": {
+          "value1": "Consumo consciente",
+          "value2": "Comercio justo",
+          "value3": "Ecologismo",
+          "value4": "Sostenibilidad"
+        }
+      },
+      "products": {
+        "h2": "Nuestos produtos",
+        "values": {
+          "product1": "Alimentación sostible",
+          "product2": "Fruta y verdura bio",
+          "product3": "Bebidas ecológicas",
+          "product4": "Suplementos nutritivos",
+          "product5": "Higiene personal",
+          "product6": "Cosmética"
+        }
+      },
+      "activities": {
+        "h2": "Actividades del mes",
+        "description": "Todos los meses organizamos talleres y clases de formación relacionados con un estilo de vida sostenible y una alimentación saludable",
+        "btn": "Ver actividades"
+      },
+      "reviews": {
+        "h2": "Vosotras"
+      }
+    }
   },
   "about": {
-    "title": "Nosotros",
+    "title": "Cooperativa de consumo de productos ecológicos",
     "seo": {
       "title": "Nosotros",
-      "description": "Página sobre qué es Árbore"
+      "description": "Cooperativa de consumo de productos ecológicos"
     }
   },
   "products": {
