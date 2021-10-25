@@ -2,15 +2,11 @@ import type { GetStaticProps, NextPage } from "next";
 import { useI18n } from "next-localization";
 import PageSeo from "components/utils/PageSeo";
 import DefaultLayout from "layouts/DefaultLayout";
-// import Image from "next/image";
-// import { ImagesSlider } from "components/images";
 import { ContainerContent } from "components/ui/containers";
 import { ButtonPrimary } from "components/ui/buttons";
-import { BannerStatic, Calendar, ReviewList, Slider } from "components/ui/blocks";
+import { BannerStatic, Calendar, ReviewList, Slider, Carousel } from "components/ui/blocks";
 import { Subtitle, Title } from "components/ui/titles";
 import { ContactForm } from "components/ui/forms";
-
-// const imgSlider = ImagesSlider.map((image: any, index: number) => (<Image src={image.src} key={image.id} alt={image.alt} />))
 
 const Home: NextPage = () => {
   const { t } = useI18n();
@@ -36,7 +32,7 @@ const Home: NextPage = () => {
         </ContainerContent>
         <ContainerContent>
           <Subtitle text={t("home.components.products.h2")} />
-          {/* <Slider elements={imgCarousel} navigation={true} loop slidesPerView={3} spaceBetween={10} /> */}
+          <Carousel />
         </ContainerContent>
         <div className="grid md:grid-cols-2 gap-20 bg-gray-200 py-10 md:py-16">
           <div className="text-center space-y-10 m-auto">
