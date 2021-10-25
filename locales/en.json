@@ -84,7 +84,8 @@
           "value2": "Fair trade",
           "value3": "Environmentalism",
           "value4": "Sustainability"
-        }
+        },
+        "btn": "Become a member"
       },
       "products": {
         "h2": "Our products",

@@ -23,10 +23,10 @@ const Home: NextPage = () => {
         </div>
         <ContainerContent>
           <Subtitle text={t("home.components.values.h2")} />
-          <BannerStatic />
+          <BannerStatic translations={t("home.components.values.values")} />
           <div className="flex justify-center">
-            <button className="border border-primary bg-gray-200  rounded-full px-10 py-2">
-              Hazte Socia
+            <button className="border border-primary bg-gray-200  rounded-full px-10 py-2 my-10">
+              {t("home.components.values.btn")}
             </button>
           </div>
         </ContainerContent>

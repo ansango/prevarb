@@ -86,10 +86,11 @@
           "value2": "Comercio xusto",
           "value3": "Ecoloxismo",
           "value4": "Sostenibilidad"
-        }
+        },
+        "btn": "Facerse membro"
       },
       "products": {
-        "h2": "Nuestos produtos",
+        "h2": "Os Nosos Produtos",
         "values": {
           "product1": "Alimentación sostible",
           "product2": "Froita e verdura bio",
