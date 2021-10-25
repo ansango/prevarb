@@ -54,3 +54,16 @@ body {
 .react-calendar__tile.react-calendar__month-view__days__day {
   @apply p-2 sm:p-4;
 }
+
+.map-leaf {
+  height: 600px;
+  z-index: 2;
+  border-radius: 0.5rem;
+}
+
+.map-leaf .leaflet-control-attribution.leaflet-control {
+  @apply hidden;
+}
+
+.leaflet-control-zoom.leaflet-bar.leaflet-control {
+}
