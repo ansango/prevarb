@@ -9,6 +9,19 @@ const NavDesktop = () => {
         {Object.entries(t("common.nav")).map(([key, value]) => {
           if (key === "home" || key === "blog") {
             return <span className="hidden" key={key}></span>;
+          } else if (key === "store") {
+            return (
+              <li key={key}>
+                <a
+                  className="text-white"
+                  href="http://enbioverde.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {value}
+                </a>
+              </li>
+            );
           } else {
             return (
               <li className="mx-2 lg:mx-6 xl:mx-8 hover:underline" key={key}>
