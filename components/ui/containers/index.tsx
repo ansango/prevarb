@@ -1,6 +1,5 @@
 import { FC, ReactElement, ReactNode } from "react";
 
-
 type Container = {
   children: ReactElement[] | ReactElement | ReactNode | null;
 };
@@ -16,7 +15,5 @@ const ContainerLayout: FC<Container> = ({ children }) => {
 const ContainerContent: FC<Container> = ({ children }) => {
   return <div className="py-10 space-y-10 md:py-16">{children}</div>;
 };
-
-
 
 export { ContainerLayout, ContainerContent };
