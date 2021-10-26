@@ -85,8 +85,18 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="px-4 py-6 mx-auto flex justify-between items-center bg-gray-200 max-w-7xl sm:px-6 lg:px-16">
-        <div className="flex flex-wrap items-baseline">
+      <div className="px-4 py-6 mx-auto md:flex md:flex-row-reverse justify-between items-center bg-gray-200 max-w-7xl sm:px-6 lg:px-16">
+        <div className="md:flex flex-col items-end">
+          <span className="text-xs font-light text-gray-500">PROXECTO COFINANCIADO</span>
+          <div className="w-32">
+            <Image src={xunta} alt="xunta" layout="intrinsic" />
+          </div>
+          <span className="text-xs font-light text-gray-500 max-w-xs text-right">
+            Implantación e pulo da estratexia dixital e modernización do sector comercial e
+            artesanal (CO300C 2021)
+          </span>
+        </div>
+        <div className="flex flex-wrap items-baseline justify-center md:justify-start">
           <span className="mt-2 text-sm font-light text-gray-500">
             Copyright © {currentYear}
             <a
@@ -97,16 +107,6 @@ const Footer = () => {
             >
               arbore
             </a>
-          </span>
-        </div>
-        <div className="flex flex-col items-end">
-          <span className="text-xs font-light text-gray-500">PROXECTO COFINANCIADO</span>
-          <div className="w-32">
-            <Image src={xunta} alt="xunta" layout="intrinsic" />
-          </div>
-          <span className="text-xs font-light text-gray-500">
-            Implantación e pulo da estratexia dixital e modernización do sector comercial e
-            artesanal (CO300C 2021)
           </span>
         </div>
       </div>
