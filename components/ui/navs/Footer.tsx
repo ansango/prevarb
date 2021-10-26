@@ -99,8 +99,15 @@ const Footer = () => {
             </a>
           </span>
         </div>
-        <div className="w-32">
-          <Image src={xunta} alt="xunta" layout="intrinsic" />
+        <div className="flex flex-col items-end">
+          <span className="text-xs font-light text-gray-500">PROXECTO COFINANCIADO</span>
+          <div className="w-32">
+            <Image src={xunta} alt="xunta" layout="intrinsic" />
+          </div>
+          <span className="text-xs font-light text-gray-500">
+            Implantación e pulo da estratexia dixital e modernización do sector comercial e
+            artesanal (CO300C 2021)
+          </span>
         </div>
       </div>
     </footer>
