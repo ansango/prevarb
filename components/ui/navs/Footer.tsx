@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { useI18n } from "next-localization";
 import { FBIcon, IGIcon } from "../icons";
-
+import Image from "next/image";
+import xunta from "public/static/images/colaboradores/xunta.png";
 const Footer = () => {
   const { t } = useI18n();
   const currentYear = new Date().getFullYear();
@@ -84,7 +85,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="px-4 py-6 mx-auto bg-gray-200 max-w-7xl sm:px-6 lg:px-16">
+      <div className="px-4 py-6 mx-auto flex justify-between items-center bg-gray-200 max-w-7xl sm:px-6 lg:px-16">
         <div className="flex flex-wrap items-baseline">
           <span className="mt-2 text-sm font-light text-gray-500">
             Copyright © {currentYear}
@@ -97,6 +98,9 @@ const Footer = () => {
               arbore
             </a>
           </span>
+        </div>
+        <div className="w-32">
+          <Image src={xunta} alt="xunta" layout="intrinsic" />
         </div>
       </div>
     </footer>
