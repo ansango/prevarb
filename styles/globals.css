@@ -55,6 +55,15 @@ body {
   @apply p-2 sm:p-4;
 }
 
+.swiper-button-next,
+.swiper-button-prev {
+  color: #548337 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #548337 !important;
+}
+
 .map-leaf {
   height: 600px;
   z-index: 2;
