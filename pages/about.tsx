@@ -3,6 +3,15 @@ import { useI18n } from "next-localization";
 import PageSeo from "components/utils/PageSeo";
 import DefaultLayout from "layouts/DefaultLayout";
 import { Title } from "components/ui/titles";
+import Image from "next/image";
+import colab1 from "public/static/images/colaboradores/agavela.png";
+import colab2 from "public/static/images/colaboradores/coop57.png";
+import colab3 from "public/static/images/colaboradores/espazo.png";
+import colab4 from "public/static/images/colaboradores/fiare.png";
+import colab5 from "public/static/images/colaboradores/mercado.png";
+import colab6 from "public/static/images/colaboradores/nosa.png";
+import colab7 from "public/static/images/colaboradores/reas.png";
+import colab8 from "public/static/images/colaboradores/somos.png";
 
 const About: NextPage = () => {
   const { t } = useI18n();
@@ -231,6 +240,50 @@ const About: NextPage = () => {
                     alt=""
                     className="mx-auto rounded-lg shadow-lg "
                   />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div className="container px-5 py-24 mx-auto lg:px-16">
+            <div className="flex flex-col w-full mb-8 text-center">
+              <span className="mb-4 text-sm font-medium tracking-wide text-gray-500 uppercase">
+                {" "}
+                The best front end teams use Wickedtemplates to state their presence.{" "}
+                <a
+                  href="https://www.wickedtemplates.com/expo.html"
+                  className="font-semibold text-blue-400 lg:mb-0 hover:text-blue-500"
+                >
+                  Our customers »
+                </a>
+              </span>
+            </div>
+            <div className="mx-auto text-center">
+              <div className="grid grid-cols-4 gap-4 mx-auto">
+                <div>
+                  <Image src={colab1} />
+                </div>
+                <div>
+                  <Image src={colab2} />
+                </div>
+                <div>
+                  <Image src={colab3} />
+                </div>
+                <div>
+                  <Image src={colab4} />
+                </div>
+                <div>
+                  <Image src={colab5} />
+                </div>
+                <div>
+                  <Image src={colab6} />
+                </div>
+                <div>
+                  <Image src={colab7} />
+                </div>
+                <div>
+                  <Image src={colab8} />
                 </div>
               </div>
             </div>
