@@ -19,8 +19,10 @@
       "menu": {
         "title": "Menú",
         "links": {
-          "company": "Empresa",
-          "projects": "Proyectos",
+          "about": "Nosotros",
+          "products": "Nuestros productos",
+          "store": "Tienda",
+          "activities": "Actividades y formación",
           "blog": "Blog",
           "members": "Socias",
           "contact": "Contacto"
@@ -32,12 +34,6 @@
           "cookies": "Política de cookies",
           "legal": "Aviso legal",
           "data": "Privacidad de datos"
-        }
-      },
-      "contact": {
-        "title": "Contacto",
-        "links": {
-          "sample": "Ejemplo"
         }
       }
     },

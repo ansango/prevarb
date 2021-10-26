@@ -19,8 +19,10 @@
       "menu": {
         "title": "Menu",
         "links": {
-          "company": "Company",
-          "projects": "Projects",
+          "about": "About",
+          "products": "Our products",
+          "store": "Store",
+          "activities": "Activities & training",
           "blog": "Blog",
           "members": "Members",
           "contact": "Contact"
@@ -33,10 +35,6 @@
           "legal": "Legal notice",
           "data": "Privacy policy"
         }
-      },
-      "contact": {
-        "title": "Contact",
-        "links": { "sample": "Sample" }
       }
     },
     "contactForm": {

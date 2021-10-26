@@ -19,9 +19,11 @@
       "menu": {
         "title": "Menú",
         "links": {
-          "company": "Empresa",
-          "projects": "Proxectos",
-          "blog": "Blog",
+          "about": "Nós",
+          "products": "Os nosos produtos",
+          "store": "Tenda",
+          "activities": "Actividades e formación",
+          "blog": "Blogue",
           "members": "Socias",
           "contact": "Contacto"
         }
