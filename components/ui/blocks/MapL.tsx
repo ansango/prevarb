@@ -17,7 +17,9 @@ const MapL = () => {
       scrollWheelZoom={false}
       className="map-leaf"
     >
-      <TileLayer url="https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoiYW5zYW5nbyIsImEiOiJja3Y3NnA2bGcxZjl1Mm9sdW5wcnhiMWtiIn0.h8ZZQEhOYwpQRjW7_DDtfA" />
+      <TileLayer
+        url={`https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/256/{z}/{x}/{y}@2x?access_token=${process.env.NEXT_PUBLIC_MAPBOX_TOKEN}`}
+      />
 
       <CircleMarker
         center={[42.2254, -8.73115]}

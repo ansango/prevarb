@@ -15,7 +15,7 @@ export default function (req: NextApiRequest, res: NextApiResponse) {
     host: "smtp.gmail.com",
     auth: {
       user: "anibalsantosgo@gmail.com",
-      pass: process.env.password,
+      pass: process.env.EMAIL_PASSWORD,
     },
     secure: true,
   });
