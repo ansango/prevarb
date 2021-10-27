@@ -1,5 +1,6 @@
 import { FC } from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
+import { postContactForm } from "services";
 
 type Inputs = {
   request: string;
@@ -19,8 +20,11 @@ type Props = {
 const ContactForm: FC<Props> = ({ translations }) => {
   const { register, handleSubmit } = useForm<Inputs>();
 
-  const onSubmit: SubmitHandler<Inputs> = (data) => {
-    window.open(`mailto:info@arbore.org?subject=${data.request}&body=${data.message}`);
+  const onSubmit: SubmitHandler<Inputs> = async (formData) => {
+    const {
+      data: { message },
+    } = await postContactForm(formData);
+    alert(message);
   };
 
   return (
@@ -28,6 +32,9 @@ const ContactForm: FC<Props> = ({ translations }) => {
       <div className="">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           <label className="block">
+            <span className="text-sm font-medium leading-5 text-gray-700">
+              {translations.request.options.default}
+            </span>
             <select
               className="
                     block
@@ -38,16 +45,17 @@ const ContactForm: FC<Props> = ({ translations }) => {
                     shadow-sm
                     focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50
                   "
-              defaultValue={translations.request.select}
               {...register("request", { required: true })}
             >
-              <option disabled>{translations.request.options.default}</option>
               <option value="information">{translations.request.options.information}</option>
               <option value="members">{translations.request.options.members}</option>
               <option value="other">{translations.request.options.other}</option>
             </select>
           </label>
           <label className="block">
+            <span className="text-sm font-medium leading-5 text-gray-700">
+              {translations.member.options.default}
+            </span>
             <select
               className="
                     block
@@ -58,15 +66,16 @@ const ContactForm: FC<Props> = ({ translations }) => {
                     shadow-sm
                     focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50
                   "
-              defaultValue={translations.member.select}
               {...register("member", { required: true })}
             >
-              <option disabled>{translations.member.options.default}</option>
               <option value="yes">{translations.member.options.yes}</option>
               <option value="no">{translations.member.options.no}</option>
             </select>
           </label>
           <label className="block">
+            <span className="text-sm font-medium leading-5 text-gray-700">
+              {translations.firstName}
+            </span>
             <input
               type="text"
               className="
@@ -83,6 +92,9 @@ const ContactForm: FC<Props> = ({ translations }) => {
             />
           </label>
           <label className="block">
+            <span className="text-sm font-medium leading-5 text-gray-700">
+              {translations.lastName}
+            </span>
             <input
               type="text"
               className="
@@ -99,6 +111,9 @@ const ContactForm: FC<Props> = ({ translations }) => {
             />
           </label>
           <label className="block">
+            <span className="text-sm font-medium leading-5 text-gray-700">
+              {translations.email}
+            </span>
             <input
               type="email"
               className="
@@ -115,6 +130,9 @@ const ContactForm: FC<Props> = ({ translations }) => {
             />
           </label>
           <label className="block">
+            <span className="text-sm font-medium leading-5 text-gray-700">
+              {translations.phone}
+            </span>
             <input
               type="text"
               className="
@@ -133,6 +151,9 @@ const ContactForm: FC<Props> = ({ translations }) => {
         </div>
         <div className="grid grid-cols-1 gap-2 pt-5">
           <label className="block">
+            <span className="text-sm font-medium leading-5 text-gray-700">
+              {translations.message}
+            </span>
             <textarea
               className="
                     mt-1
